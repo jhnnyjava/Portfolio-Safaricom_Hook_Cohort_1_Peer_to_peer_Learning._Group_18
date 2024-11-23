@@ -23,9 +23,9 @@ def send_message():
         # Optionally, send an email (replace with your SMTP server details)
         smtp_server = "smtp.gmail.com"
         smtp_port = 587
-        sender_email = "your-email@gmail.com"  # Your email here
-        sender_password = "your-password"  # Your email password or app password
-        recipient_email = "recipient-email@gmail.com"  # Recipient's email
+        sender_email = "johnkhaemba710email@gmail.com"  # Your email here
+        sender_password = "khaoma11108"  # Your email password or app password
+        recipient_email = "khaemba.sumba@students.jkua.ac.ke"  # Recipient's email
 
         with smtplib.SMTP(smtp_server, smtp_port) as server:
             server.starttls()

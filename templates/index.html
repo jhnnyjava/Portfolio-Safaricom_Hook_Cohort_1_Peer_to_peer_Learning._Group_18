@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of John Khaemba - Mechanical Engineering student, Frontend Developer, and Environmental Enthusiast. Explore my projects, skills, and contact information.">
+
+    <title>John Khaemba - Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <button id="theme-toggle">🌙 Dark Mode</button>
+                <a href="#">MyPortfolio</a>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hello, It's Me</h1>
+            <h2><span>John Khaemba</span></h2>
+            <p>And I'm a <strong>Frontend Developer, a Mechanical Engineering student, an AI prompt Engineering, Volunteer, and an environmental enthusiast.</strong>.</p>
+            <div class="social-icons">
+                <a href="https://x.com/johnkhaemba16?t=xJbKwRjGuhLMC6PrdwIP5Q&s=08" target="_blank">
+                    <img src="{{ url_for('static', filename='icons8-twitter-50.png') }}" alt="Twitter">
+                </a>
+                <a href="https://www.linkedin.com/in/john-sumba-4069412a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                    <img src="{{ url_for('static', filename= 'icons8-linkedin-48.png') }}" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+        <!-- Updated Profile Image -->
+        <div class="profile-container">
+            <img src="{{ url_for('static', filename='myphoto.jpg') }}" alt="Profile Image">
+        </div>
+
+    </section>
+
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+
+                        I am a passionate and driven second-year
+                        <strong> Mechanical Engineering student </strong> at Jomo Kenyatta University of Agriculture and Technology (JKUAT), with a strong focus on using engineering to address societal and environmental challenges. My journey is deeply
+                        rooted in leveraging innovative solutions to foster sustainability, improve community health, and promote environmental conservation. As an active member of various organizations, including Greenpeace African Communities, Ubunifu
+                        Hub, and the Society of Engineering Students, I have cultivated leadership, teamwork, and advocacy skills. These experiences have allowed me to spearhead initiatives such as tree-planting drives, soil health workshops, and tech-based
+                        solutions for sustainable development. I complement my academic endeavors with professional development, pursuing certifications in AI, cloud computing, entrepreneurship, and software development. My technical skills span CAD modeling,
+                        project design, and programming, equipping me to tackle challenges in both engineering and environmental sectors. My goal is to create scalable, impactful solutions that integrate technology and sustainability, empowering communities
+                        and contributing to a healthier, greener future.
+                    </p>
+                    <p>
+                        I love tackling challenges, from innovative CAD modeling to research in road infrastructure. My journey includes being a part of amazing organizations like Ubunifu Hub, Greenpeace, and SES. Together, we drive change and innovation!
+                    </p>
+                    <a href="#contact" class="btn-primary">Contact Me</a>
+                </div>
+                <div class="about-image">
+                    <img src="{{ url_for('static', filename='Yg2KLLm3XVF3eCmP5LdIFHETcrsuGeUTu5Qy1Wjc.jpg') }}" alt="About Me">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education-section" id="education">
+        <h2>Education & Certifications</h2>
+        <div class="education-container">
+            <!-- Primary School -->
+            <div class="education-item">
+                <h3>Bungoma D.E.B Primary School</h3>
+                <p class="grade">A- (378 marks) | 2018</p>
+                <p class="date">Kenya Certificate of Primary Education (KCPE)</p>
+            </div>
+
+            <!-- High School -->
+            <div class="education-item">
+                <h3>St. Mary's Kibabii Boys High School</h3>
+                <p class="grade">A- (80 points) | 2019-2023</p>
+                <p class="date">Kenya Certificate of Secondary Education (KCSE)</p>
+            </div>
+
+            <!-- JKUAT University -->
+            <div class="education-item">
+                <h3>Jomo Kenyatta University of Agriculture & Technology (JKUAT)</h3>
+                <p class="degree">Bachelor of Mechanical Engineering | 2023-Present</p>
+                <p class="date">Second-year student on a government scholarship</p>
+            </div>
+
+            <!-- Cisco Cyber Security -->
+            <div class="education-item">
+                <h3>Introduction to Cyber Security</h3>
+                <p class="course">Cisco Academy | 2024</p>
+                <p class="date">3 Weeks Certificate</p>
+            </div>
+
+            <!-- ALX AI Career Essentials -->
+            <div class="education-item">
+                <h3>AI Career Essentials</h3>
+                <p class="course">ALX Academy | 2024</p>
+                <p class="date">6 Weeks Certificate</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container ">
+            <!-- HTML Skill -->
+            <div class="skill-item " data-skill="100% ">
+                <div class="skill-name ">
+                    <i class="fab fa-html5 "></i>
+                    <span>HTML</span>
+                </div>
+                <div class="skill-bar ">
+                    <div class="skill-progress html "></div>
+                </div>
+                <div class="tooltip ">100% Proficient</div>
+            </div>
+
+            <!-- CSS Skill -->
+            <div class="skill-item " data-skill="100% ">
+                <div class="skill-name ">
+                    <i class="fab fa-css3-alt "></i>
+                    <span>CSS</span>
+                </div>
+                <div class="skill-bar ">
+                    <div class="skill-progress css "></div>
+                </div>
+                <div class="tooltip ">100% Proficient</div>
+            </div>
+
+
+            <!-- PYTHON PROGRAMMING Skill -->
+            <div class="skill-item " data-skill="100% ">
+                <div class="skill-name ">
+                    <i class="fab fa-css3-alt "></i>
+                    <span>PYTHON PROGRAMMING</span>
+                </div>
+                <div class="skill-bar ">
+                    <div class="skill-progress css "></div>
+                </div>
+                <div class="tooltip ">100% Proficient</div>
+            </div>
+
+
+            <!-- JavaScript Skill -->
+            <div class="skill-item " data-skill="100% ">
+                <div class="skill-name ">
+                    <i class="fab fa-js "></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-bar ">
+                    <div class="skill-progress js "></div>
+                </div>
+                <div class="tooltip ">100% Proficient</div>
+            </div>
+
+            <!-- Metal Fabrication -->
+            <div class="skill-item " data-skill="100% ">
+                <div class="skill-name ">
+                    <i class="fas fa-tools "></i>
+                    <span>Metal Fabrication</span>
+                </div>
+                <div class="skill-bar ">
+                    <div class="skill-progress metal-fabrication "></div>
+                </div>
+                <div class="tooltip ">100% Proficient</div>
+            </div>
+
+            <!-- Mechanics -->
+            <div class="skill-item " data-skill="100% ">
+                <div class="skill-name ">
+                    <i class="fas fa-cogs "></i>
+                    <span>Mechanics</span>
+                </div>
+                <div class="skill-bar ">
+                    <div class="skill-progress mechanics "></div>
+                </div>
+                <div class="tooltip ">100% Proficient</div>
+            </div>
+
+            <!-- Automotive Repair -->
+            <div class="skill-item " data-skill="100% ">
+                <div class="skill-name ">
+                    <i class="fas fa-car "></i>
+                    <span>Automotive Repair</span>
+                </div>
+                <div class="skill-bar ">
+                    <div class="skill-progress automotive-repair "></div>
+                </div>
+                <div class="tooltip ">100% Proficient</div>
+            </div>
+
+            <!-- Teamwork -->
+            <div class="skill-item " data-skill="100% ">
+                <div class="skill-name ">
+                    <i class="fas fa-users "></i>
+                    <span>Teamwork</span>
+                </div>
+                <div class="skill-bar ">
+                    <div class="skill-progress teamwork "></div>
+                </div>
+                <div class="tooltip ">100% Proficient</div>
+            </div>
+
+            <!-- Research Assistant at JKUAT -->
+            <div class="skill-item " data-skill="100% ">
+                <div class="skill-name ">
+                    <i class="fas fa-flask "></i>
+                    <span>Research Assistant</span>
+                </div>
+                <div class="skill-bar ">
+                    <div class="skill-progress research-assistant "></div>
+                </div>
+                <div class="tooltip ">100% Proficient</div>
+            </div>
+
+            <!-- ALX Academy -->
+            <div class="skill-item " data-skill="100% ">
+                <div class="skill-name ">
+                    <i class="fas fa-graduation-cap "></i>
+                    <span>ALX Academy</span>
+                </div>
+                <div class="skill-bar ">
+                    <div class="skill-progress alx-academy "></div>
+                </div>
+                <div class="tooltip ">100% Proficient</div>
+            </div>
+
+            <!-- CAD Software -->
+            <div class="skill-item " data-skill="100% ">
+                <div class="skill-name ">
+                    <i class="fas fa-cogs "></i>
+                    <span>CAD Software</span>
+                </div>
+                <div class="skill-bar ">
+                    <div class="skill-progress cad-software "></div>
+                </div>
+                <div class="tooltip ">100% Proficient</div>
+            </div>
+
+            <!-- 3D Printing -->
+            <div class="skill-item " data-skill="100% ">
+                <div class="skill-name ">
+                    <i class="fas fa-print "></i>
+                    <span>3D Printing</span>
+                </div>
+                <div class="skill-bar ">
+                    <div class="skill-progress printing "></div>
+                </div>
+                <div class="tooltip ">100% Proficient</div>
+            </div>
+
+            <!-- Front-End Web Development -->
+            <div class="skill-item " data-skill="100% ">
+                <div class="skill-name ">
+                    <i class="fas fa-laptop-code "></i>
+                    <span>Front-End Web Development</span>
+                </div>
+                <div class="skill-bar ">
+                    <div class="skill-progress frontend-web-dev "></div>
+                </div>
+                <div class="tooltip ">100% Proficient</div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="download-cv-section ">
+        <a href="{{ url_for('static', filename='SUMBA JOHN KHAEMBA CV.pdf') }}" download class="download-cv-button">
+            <i class="fas fa-download"></i> Download My CV
+        </a>               
+    </section>
+
+
+
+
+
+    <section class="projects-section ">
+        <h2>My Projects, Research Experiences and Professional</h2>
+        <div class="projects-container ">
+            <!-- Project 1: Finding a Substitute Waterjet Abrasive Material -->
+            <div class="project-item ">
+                <div class="project-image ">
+                    <img src="{{ url_for('static', filename='waterjet.jpg') }}" alt="Substitute Waterjet Abrasive Material Project ">
+                </div>
+                <div class="project-content ">
+                    <h3>Finding a Substitute Waterjet Abrasive Material</h3>
+                    <p class="project-description ">This project involves researching and identifying locally available materials that can be used as substitutes for traditional waterjet abrasives, aimed at reducing costs and improving sustainability in manufacturing.</p>
+                    <div class="technologies ">
+                        <span>Research</span> <span>Materials Science</span> <span>Mechanical Engineering</span>
+                    </div>
+                    <div class="project-links ">
+                        <a href="https://www.canva.com/design/DAGTeQRvQGk/s4xI6QhRG6-8YKWiOoabPA/view?utm_content=DAGTeQRvQGk&utm_campaign=designshare&utm_medium=link&utm_source=editor " class="btn ">View Project</a>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="project-item ">
+                <div class="project-image ">
+                    <img src="{{ url_for('static', filename='researchpic.webp') }}" alt="Project 2 ">
+                </div>
+                <div class="project-content ">
+                    <h3>Enviromental Research Projects</h3>
+                    <p class="project-description "> Conducted research on alternative, durable materials for infrastructure and engineering projects. Focused on reducing the environmental footprint of construction and manufacturing processes. </p>
+                    <div class="technologies ">
+                        <span></span> <span></span> <span></span>
+                    </div>
+                    <div class="project-links ">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="contact" class="contact-section ">
+        <h2>Contact Me</h2>
+        <p>
+            Email: <a href="mailto:johnkhaemba710@gmail.com ">johnkhaemba710@gmail.com</a><br> Phone: <a href="tel:+254100764130 ">+254 100764130</a><br>
+        </p>
+        <p>
+            Social Media:
+            <a href="https://www.linkedin.com/in/john-sumba-4069412a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " target="_blank ">LinkedIn</a> |
+            <a href="https://x.com/johnkhaemba16?t=xJbKwRjGuhLMC6PrdwIP5Q&s=08 " target="_blank ">X (Twitter)</a>
+        </p>
+
+
+    </section>
+    <!-- Contact Form Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or want to leave a message, feel free to contact me!</p>
+        <form action="/send-message" method="POST" id="contact-form">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+
+            <button type="submit" id="submit-btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 John Khaemba. All rights reserved.</p>
+    </footer>
+    <script src="{{ url_for('static', filename='Dark_mode toggle.js') }}"></script>
+</body>
+
+</html>
+
+</html>

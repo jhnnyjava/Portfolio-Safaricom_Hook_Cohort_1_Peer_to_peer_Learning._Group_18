@@ -1,28 +1,35 @@
 # Portfolio-Safaricom_Hook_Cohort_1_Peer_to_peer_Learning._Group_18
 # John Khaemba - Portfolio
 
-This is the personal portfolio of **John Khaemba**, a **Frontend Developer**, **Mechanical Engineering student**, **AI prompt Engineer**, **Volunteer**, and **Environmental enthusiast**. The portfolio showcases various aspects of my skills, projects, education, and experience. The website is designed to provide a comprehensive view of my professional background, abilities, and personal interests.
+This is the personal portfolio of John Khaemba, a Frontend Developer, Mechanical Engineering student, AI prompt Engineer, Volunteer, and Environmental enthusiast. This portfolio showcases various aspects of my skills, projects, education, and experience. It is designed to provide a comprehensive view of my professional background, abilities, and personal interests.
 
-## Features
+**Features**
+**Personalized Introduction**: "Hello, it’s me" section, introducing who I am and what I do.
+**Responsive Design**: Optimized for both mobile and desktop devices.
+**Hover Effects**: Interactive hover effects on elements like the profile image, with smooth transitions.
+**Dark Mode Toggle**: A dark mode option to switch between light and dark themes for better accessibility.
+**Navigation Bar**: Links to different sections such as About, Skills, Education, Contact, and Social Media (Twitter, LinkedIn).
+**Profile Image**: A circular image with a border and shadow effect, which enlarges slightly when hovered over.
+**Social Media Links**: Direct access to my professional profiles on social media.
+**Smooth Transitions**: Interactive transitions for various elements for a polished look and feel.
+**Backend Integration**: Contact form functionality using Python's Flask framework to handle form submissions.
 
-- **Personalized Introduction**: An engaging "Hello, it's me" section, introducing who I am and what I do.
-- **Responsive Design**: Optimized for both mobile and desktop devices.
-- **Hover Effects**: Interactive hover effects on elements like the profile image, with smooth transitions.
-- **Dark Mode Toggle**: A dark mode option to switch between light and dark themes for better accessibility.
-- **Navigation Bar**: Links to different sections such as **About**, **Skills**, **Education**, **Contact**, and **Social Media** (Twitter, LinkedIn).
-- **Profile Image**: A circular image with a border and shadow effect, which enlarges slightly when hovered over.
-- **Social Media Links**: Direct access to my professional profiles on social media.
-- **Smooth Transitions**: Interactive transitions for various elements for a polished look and feel.
 
 ## Technologies Used
 
 - **HTML5**: Structure and content for the webpage.
-- **Python**: Use as the backend language.
+- **Python**: Use as the backend language.(Flask framework)
 - **CSS3**: Styling, layout design, transitions, and responsiveness.
 - **JavaScript**: Interactive elements, including the dark mode toggle functionality.
 - **Flexbox**: Layout system used for centering elements and creating flexible layouts.
 - **Media Queries**: For making the portfolio responsive on various screen sizes.
 - **Git**: Version control for managing the project.
+
+**Project Structure**
+**templates/**: Contains the index.html file (required for Flask backend).
+**static/**: Contains CSS, JavaScript, and image assets.
+**app.py**: Flask backend to handle dynamic functionality, such as form submissions.
+**messages.txt**: Stores contact form submissions locally (during testing).
 
 ## Setup Instructions
 
@@ -58,13 +65,57 @@ Open the project in Visual Studio Code (or your preferred editor):
 bash
 Copy code
 code .
-Open the index.html file:
 
-Simply open the index.html file in a browser to view the portfolio. You can right-click on the file and select "Open with" your preferred browser, or you can use live-server extensions in your editor for real-time preview.
+**Deployment Instructions**
+**Option 1: Deploy as a Static Website on GitHub Pages**
+If you don't require backend functionality (e.g., the contact form):
 
-Optional - Run a local server:
+Extract the Rendered HTML:
 
-If you want to test the project with a local development server, you can use the following command if you have Python installed:
+Run the Flask app locally using python app.py.
+Open the app in your browser (http://127.0.0.1:5000/) and save the page as static index.html.
+Organize Files:
+
+Place index.html in the root of your repository.
+Move CSS and other assets to the root directory (e.g., style.css).
+Push to GitHub:
+
+Commit the changes and push to your GitHub repository.
+Enable GitHub Pages:
+Go to Settings > Pages.
+Select the main branch and the / (root) folder.
+Access Your Website:
+
+Your site will be live at https://<your-username>.github.io/<repository-name>/.
+**Option 2: Deploy as a Flask Application**
+If you need backend functionality (e.g., the contact form):
+
+Choose a Hosting Platform:
+
+Use platforms like Render, PythonAnywhere, or Heroku.
+Set Up the Deployment:
+
+Push your entire project (including app.py, templates, and static folders) to GitHub.
+On the hosting platform:
+Connect your GitHub repository.
+Set the Start Command to gunicorn app:app.
+Ensure that all environment variables (if any) are configured.
+Test Your Deployment:
+
+After the deployment is complete, the platform will provide you with a URL where your Flask app is live.
+**Hybrid Approach**
+If you want to use GitHub Pages for the static version and Flask for the backend:
+
+Deploy the static version on GitHub Pages (as described in Option 1).
+Deploy the Flask backend (as described in Option 2).
+Use AJAX or fetch requests in your static site to interact with the Flask API for dynamic features like the contact form.
+Known Issues
+Contact Form on GitHub Pages: The contact form will not work on GitHub Pages since it requires Flask to process submissions.
+Gmail SMTP Authentication: Ensure you use an App Password for Gmail (not your primary Gmail password). Follow these instructions to generate an App Password for secure email sending.
+Future Improvements
+Deploy a fully dynamic version of the portfolio on a Flask-compatible host.
+Add more animations and interactivity.
+
 
 bash
 Copy code
